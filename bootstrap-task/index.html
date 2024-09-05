@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootStrap</title>
+  <!-- <link rel="stylesheet" href="Bootstrap_File/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Bootstrap_File/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="css/style.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+  <!--  -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="javascript:void(0)">Bakr's Laptops</a>
+        <img src="images/logo2.jpg" alt="" class="mx-xxl-5 mx-md-0"
+          style="width: 50px; border:2px solid rgb(0, 0, 0); border-radius: 50%;">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item ">
+              <a href="#" class="nav-link mx-xl-5 mx-md-0 text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-xl-5 mx-md-0 text-white">Links</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-xl-5 mx-md-0 text-white">Types</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link mx-xl-5 mx-md-0 text-white dropdown-toggle" role="button"
+                data-bs-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hp Core i7 G11</a></li>
+                <li><a class="dropdown-item" href="#">Dell Core i5 G10</a></li>
+                <li><a class="dropdown-item" href="#">Asus Core i3 G6</a></li>
+                <li><a class="dropdown-item" href="#">Lenovo Core i5 G8</a></li>
+                <li><a class="dropdown-item" href="#">Mac Core i9 G12</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary mx-5" type="button">Search</button>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- login form -->
+  <!-- Modal -->
+  <div class="modal fade z" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header  bg-primary">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+              <label class="form-check-label" for="mySwitch">Remember Me</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+  <!-- List Of Icons -->
+
+
+
+
+  <div class="icons">
+    <ul
+      class="position-fixed top-50 translate-middle-y end-0 d-flex flex-column align-items-end pe-4 fs-1 text-primary">
+      <li><i class="fa-brands fa-square-facebook"></i></li>
+      <li><i class="fa-brands fa-square-whatsapp"></i></li>
+      <li><i class="fa-brands fa-square-twitter"></i></li>
+      <li><i class="fa-brands fa-linkedin"></i></li>
+      <li><i class="fa-brands fa-square-instagram"></i></li>
+    </ul>
+  </div>
+
+
+
+  <!--  -->
+  <main>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active text-bg-dark"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="text-bg-dark"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="text-bg-dark"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/1_Home_-removebg-preview.png" alt="Los Angeles" class="d-block main_photo">
+          <div class="carousel-caption text-black">
+            <h3>Laptop Hp Core i7 G11</h3>
+            <p>1T SSD Hard | 16GB RAM</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/2_Home_-removebg-preview.png" alt="Chicago" class="d-block main_photo">
+          <div class="carousel-caption text-black">
+            <h3>Laptop Dell Core i5 G10</h3>
+            <p>500GB HDD Hard | 32GB RAM</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/4_Home___3_-removebg-preview (1).png" alt="New York" class="d-block main_photo">
+          <div class="carousel-caption text-black">
+            <h3>Laptop Asus Core i3 G6</h3>
+            <p>2T SSD Hard | 64GB RAM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </main>
+
+  <!--  -->
+
+  <section class="welcome">
+    <div class="container-fluid bg-info p-4 lh-lg" style="border-radius: 2%;">
+      <p class="h3">Welcome To Our Website</p>
+      <p class="text-white lh-">we are an online and offline store for electronics so if you want
+        to buy a laptop we are your destanation
+        cause we have the best laptops ever with good price and we are a very trusted from the clients,
+        you clearly can see that from our ratings and comments Below.
+      </p>
+      <button class="btn btn-dark">Learn More</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <!--  -->
+  <section class="our-branches">
+    <div class="container-fluid bg-info h1 d-flex justify-content-center align-items-center"
+      style="border-radius: 2%; height: 15vh;">
+      Our Branches In Egypt
+    </div>
+
+
+    <div class="container-fluid mt-3">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header dropdown">
+            <a class="collapsed btn dropdown-toggle d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse" href="#collapseOne">
+              Giza City Branch
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header dropdown">
+            <a class="collapsed btn dropdown-toggle d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse" href="#collapseTwo">
+              Alexandria City Branch
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header dropdown">
+            <a class="collapsed btn dropdown-toggle d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse" href="#collapseThree">
+              Cairo City Branch
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!--  -->
+
+  <section class="translateFromARtoEN">
+    <div class="container-fluid bg-info h2 d-flex justify-content-center align-items-center"
+      style="border-radius: 2%; height: 15vh;">
+      Translate From Arabic To English
+    </div>
+    <div class="p-3">
+      <p class="fs-4">Write And Translate <a href="#" style="text-decoration: none;" class="text-danger">Press Here</a
+          href="#" style="text-decoration: none;"></p>
+      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Copy</button>
+      <br><br>
+      <textarea placeholder="Translate :" class="w-75" style="height: 150px;"></textarea>
+    </div>
+  </section>
+
+  <hr>
+
+  <!--  -->
+
+  <section class="translateFromARtoFR">
+    <div class="container-fluid bg-info h2 d-flex justify-content-center align-items-center"
+      style="border-radius: 2%; height: 15vh;">
+      Translate From Arabic To Freench
+    </div>
+    <div class="p-3">
+      <p class="fs-4">Write And Translate <a href="#" style="text-decoration: none;" class="text-danger">Press Here</a
+          href="#" style="text-decoration: none;"></p>
+      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Copy</button>
+      <br><br>
+      <textarea placeholder="Translate :" class="w-75" style="height: 150px;"></textarea>
+    </div>
+  </section>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Text Copied Successfully
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="fixedImage"></div>
+
+  <!--  -->
+  <!-- cards -->
+  <section class="Cards Section">
+    <div class="container-fluid bg-info d-flex justify-content-center align-items-center mb-5"
+      style="border-radius: 2%; height: 15vh;">
+      <h2 class="text-center">Popular personal electronic devices In Market Now.</h2>
+    </div>
+
+    <div class="container">
+      <div class="row gx-lg-5 gy-lg-5 gx-md-3 gy-md-0">
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (1).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Camera Canon EOS 5D</h5>
+              <p class="card-text">this model offers High-Quality Images and Videos And Creative Control</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="overlay2"></div>
+          </div>
+        </div>
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (12).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Smartwatch G9 Ultra PRO</h5>
+              <p class="card-text">24K Gold New Model 3 Watch Bands Sport Waterproof Bluetooth Call Best Smart Watch</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="overlay2"></div>
+          </div>
+        </div>
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (2).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Sony launches DSC-F707</h5>
+              <p class="card-text">it was deisgned to have Zoom Capabilities and Low-Light Performance</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="overlay2"></div>
+          </div>
+        </div>
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (10).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Phone Oppo Reno 12</h5>
+              <p class="card-text">The Oppo Reno 5 is a mid-range smartphone with aMOLED Display and Strong Performance
+              </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="overlay2"></div>
+          </div>
+        </div>
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (9).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Tablet Samsung S40E</h5>
+              <p class="card-text">that exactly model has Lightweight and Sleek Design and AI Color Portrait and Video
+                Features in it</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="overlay2"></div>
+          </div>
+        </div>
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (8).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">GMT-Master II</h5>
+              <p class="card-text">Oyster, 40 mm, Oystersteel Reference 126710GRNR</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="overlay2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cards -->
+
+  <!--  -->
+  <!-- fixed image -->
+  <div class="fixedImage"></div>
+
+  <!-- fixed image -->
+
+  <!-- 3 cards persons -->
+  <!-- cards -->
+  <section class="Cards Section ">
+    <div class="container-fluid bg-info d-flex justify-content-center align-items-center mb-5"
+      style="border-radius: 2%; height: 15vh;">
+      <h1 style="font-size: 2em;">Thanks For</h1>
+    </div>
+    <div class="container mt-5 ">
+      <div class="row ">
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="people fw-bold card-body py-5 px-3 m-auto">
+            <div class="back card-img-overlay z-n1"></div>
+            <h5>we are very grateful and thankful for you.</h5>
+            <i class="fa-regular fa-clock"></i>
+            <span class="date">November 14,2023</span>
+            <img src="images/person3.jpg" class="my-3" style="border-radius: 50%; width: 50%; height: 70%;">
+            <p>Eng/ Ahmed Abobaker Director Of Micro Finance</p>
+          </div>
+        </div>
+        <!-- card end -->
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="people fw-bold card-body py-5 px-3 m-auto">
+            <div class="back2 card-img-overlay z-n1"></div>
+            <h5>All thanks and appreciation for you.</h5>
+            <i class="fa-regular fa-clock"></i>
+            <span class="date">December 3,2021</span>
+            <img src="images/person1.jpg" class="my-3" style="border-radius: 50%; width: 50%; height: 70%;">
+            <p>Eng/ Ahmed Abobaker Director Of Audit team</p>
+          </div>
+        </div>
+        <!-- card end -->
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="people fw-bold card-body py-5 px-3 m-auto">
+            <div class="back4 card-img-overlay z-n1"></div>
+            <h5>we are very grateful and thankful for you.</h5>
+            <i class="fa-regular fa-clock"></i>
+            <span class="date">may 25,2022</span>
+            <img src="images/person4.jpg" class="my-3" style="border-radius: 50%; width: 50%; height: 70%;">
+            <p>Eng/ Ebraheem mohamed Director Of financial service</p>
+          </div>
+        </div>
+        <!-- card end -->
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!--  -->
+
+  <!-- cards wiht no buttons Daily News -->
+  <section>
+    <h1 class="text-info text-center mt-4">Daily News</h1>
+    <div class="line m-auto mb-4"></div>
+    <!-- cards -->
+    <div class="container">
+      <div class="row  gx-lg-5 gy-lg-5 gx-md-3 gy-md-0">
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (7).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Fastrack FR1|1.39 inch Super UltraVU</h5>
+              <i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023
+              <div class="line"></div>
+              <!-- Text container with fixed height and scrollable content -->
+              <div class="bg-info text-white lh-lg xxx"
+                style="width: 100%; height: 150px; overflow-y: auto; padding: 10px;">
+                <p class="card-text" style="margin: 0;">It is a feature-packed smartwatch with a 1.39-inch Super UltraVU
+                  display, offering sharp and vibrant visuals for an enhanced viewing experience. Designed with a modern
+                  and sleek aesthetic, it combines style with functionality. The watch includes essential fitness
+                  tracking features such as heart rate monitoring, SpO2 tracking, and multiple sports modes to cater to
+                  a variety of activities. It also provides smart notifications for calls, messages, and apps, helping
+                  users stay connected. With a durable build and customizable watch faces, the Fastrack FR1 is a
+                  versatile smartwatch that balances performance and style, making it a great option for both fitness
+                  enthusiasts and everyday users.</p>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <!-- card end -->
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (6).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Mivi Model E with 1.69" Display watch</h5>
+              <i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023
+              <div class="line"></div>
+              <!-- Text container with fixed height and scrollable content -->
+              <div class="bg-info text-white lh-lg xxx"
+                style="width: 100%; height: 150px; overflow-y: auto; padding: 10px;">
+                <p class="card-text" style="margin: 0;">The Mivi Model E is an affordable smartwatch featuring a large
+                  1.69-inch full-touch HD display, offering bright visuals and an easy-to-read interface. Designed for
+                  everyday wear, it boasts a sleek and lightweight build with multiple color options. The smartwatch
+                  includes essential health tracking features such as heart rate monitoring, SpO2 tracking, and sleep
+                  analysis, along with multiple sports modes for fitness enthusiasts. With an IP68 water resistance
+                  rating, it’s durable enough for workouts and daily use. The Mivi Model E offers long-lasting battery
+                  life, smart notifications for calls and messages, and is compatible with both Android and iOS devices.
+                </p>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <!-- card end -->
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (5).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Gold iphone 12 pro max 16.5 inches</h5>
+              <i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023
+              <div class="line"></div>
+              <!-- Text container with fixed height and scrollable content -->
+              <div class="bg-info text-white lh-lg xxx"
+                style="width: 100%; height: 150px; overflow-y: auto; padding: 10px;">
+                <p class="card-text" style="margin: 0;">iPhone 12 Pro Max Key Features & Advantages:<br>
+                  Display:
+
+                  6.7-inch Super Retina XDR OLED
+                  Vibrant colors, deep blacks, and sharp details<br>
+                  Performance:
+
+                  A14 Bionic chip for top-tier performance in gaming, multitasking, and intensive tasks<br>
+                  5G Connectivity:
+
+                  Supports faster downloads, lower latency, and reliable network performance<br>
+                  Durability:
+
+                  Ceramic Shield for improved drop protection<br>
+                  MagSafe:
+
+                  Easy attachment for accessories and faster wireless charging<br>
+                  Battery Life:
+
+                  All-day battery life, even with heavy use<br>
+                  Design:
+
+                  Sleek stainless steel frame with a matte glass back, premium look and feel
+                </p>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <!-- card end -->
+
+        <!-- Card Start -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card" style="width: 100%; position: relative;">
+            <img src="img2/1 (4).jpg" class="card-img-top" alt="..." style="height: 40vh;">
+            <div class="card-body">
+              <h5 class="card-title">Asus ROG Flow Z13-ACRNM RMT02 GZ301VIC</h5>
+              <i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023
+              <div class="line"></div>
+              <!-- Text container with fixed height and scrollable content -->
+              <div class="bg-info text-white lh-lg xxx"
+                style="width: 100%; height: 150px; overflow-y: auto; padding: 10px;">
+                <p class="card-text" style="margin: 0;">the spics of this device are <br>
+                  Processor: Intel Core™ i9-13900H<br>
+                  Graphics: NVIDIA GeForce RTX™ 4070 Laptop GPU with NVIDIA Advanced Optimus<br>
+                  Display: QHD (2560 x 1440), 165Hz refresh rate, 500 nits brightness, 100% DCI-P3 color gamut<br>
+                  Storage: 1TB SSD<br>
+                  Memory: 32 GB RAM<br>
+                  Cooling: Vapor Chamber and Liquid Metal thermal solution
+                </p>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <!-- card end -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <h1 class="text-info text-center mt-4">Join us</h1>
+    <div class="line m-auto mb-4"></div>
+
+    <div class="d-flex flex-column text-center m-auto align-items-center">
+
+      <div class=" w-50 my-4 border-black  border" style="font-size: 2rem;">
+        <p>link of the page</p>
+        <i class="fa-brands fa-square-facebook text-primary border-0" style="font-size: 6.3rem;"></i>
+        <p>go to link</p>
+      </div>
+
+      <div class=" w-50 my-4 border-black  border" style="font-size: 2rem;">
+        <p>link of the page</p>
+        <i class="fa-brands fa-linkedin text-primary border-0" style="font-size: 6.3rem;"></i>
+        <p>go to link</p>
+      </div>
+
+      <div class=" w-50 my-4 border-black  border" style="font-size: 2rem;">
+        <p>link of the page</p>
+        <i class="fa-brands fa-square-instagram text-danger border-0" style="font-size: 6.3rem;"></i>
+        <p>go to link</p>
+      </div>
+
+      <div class=" w-50 my-4 border-black  border" style="font-size: 2rem;">
+        <p>link of the page</p>
+        <i class="fa-brands fa-square-whatsapp text-success border-0" style="font-size: 6.3rem;"></i>
+        <p>go to link</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--  -->
+  <!--  -->
+
+  <footer>
+
+    <hr>
+
+    <div class="text-center my-3" style="font-size: 2.4rem;">
+      <img src="images/logo2.jpg" alt="" class="mx-xxl-5 mx-md-0"
+        style="width: 70px; border:2px solid rgb(0, 0, 0); border-radius: 50%;">
+
+      <span class="">Good Morning</span>
+    </div>
+
+    <hr>
+
+    <div class="address my-2 m-auto text-center">
+      <p>Tel : 0001124364</p>
+      <p>Address : Egypt</p>
+      <p>Fax : 00000.00000.11476.1005</p>
+    </div>
+
+    <hr>
+
+    <div class="text-center my-3" style="font-size: 2.4rem;">
+      <img src="images/logo2.jpg" alt="" class="mx-xxl-5 mx-md-0"
+        style="width: 70px; border:2px solid rgb(0, 0, 0); border-radius: 50%;">
+      <span class="">Important Links</span>
+    </div>
+
+    <hr>
+
+    <div class="no my-2 m-auto text-center">
+      <p>visit us</p>
+      <p>take a look</p>
+      <p>your comforte is more important</p>
+    </div>
+
+    <hr>
+
+    <div class="text-center my-3 m-auto" style="font-size: 2.4rem;">
+      <img src="images/logo2.jpg" alt="" class="mx-xxl-5 mx-md-0"
+        style="width: 70px; border:2px solid rgb(0, 0, 0); border-radius: 50%;">
+      <span class="">Vision</span>
+    </div>
+
+    <hr>
+
+
+    <div class="no my-2 m-auto text-center ">
+      <p>service for all</p>
+      <p>provide best services</p>
+      <p>you will be better than before</p>
+    </div>
+
+    <hr>
+
+    <p>CopyRight © 2025 summer camping</p>
+  </footer>
+
+  <!--  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <a href="test.html" class="btn btn-danger">test</a> -->
+</body>
+
+</html>
